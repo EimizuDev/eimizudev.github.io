@@ -1,2 +1,3 @@
-# eimizudev.github.io
-My portfolio website. Made with HTML, CSS, Javascript
+# EimizuDev Portfolio
+
+My portfolio website. Made with HTML, CSS, Javascript.
