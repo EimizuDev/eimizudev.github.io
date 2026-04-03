@@ -9,31 +9,36 @@
     <title>EimizuDev Portfolio</title>
     <meta name="description" content="EimizuDev portfolio">
     <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex">
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <div id="hover-slider" aria-hidden="true"></div>
-          <li id="hero" onmouseover="TransformHoverSlider(0)"><a href="#hero">Home</a></li>
-          <li id="about-me" onmouseover="TransformHoverSlider(1)"><a href="#about-me">About me</a></li>
-          <li id="projects" onmouseover="TransformHoverSlider(2)"><a href="#projects">Projects</a></li>
-          <li id="contacts" onmouseover="TransformHoverSlider(3)"><a href="#contacts">Contacts</a></li>
+          <li id="hero-nav" onmouseover="TransformHoverSlider(0)"><a href="#hero">Home</a></li>
+          <li id="about-me-nav" onmouseover="TransformHoverSlider(1)"><a href="#about-me">About me</a></li>
+          <li id="projects-nav" onmouseover="TransformHoverSlider(2)"><a href="#projects">Projects</a></li>
+          <li id="contacts-nav" onmouseover="TransformHoverSlider(3)"><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="hero">
-        <h1></h1>
-      </section>
-      <section id="about-me">
-        <h2></h2>
-      </section>
-      <section id="projects">
-        <h2></h2>
-      </section>
-      <section id="contacts">
-        <h2></h2>
+        <div class="hero-content">
+          <h1>
+            <strong style="font-size: 50px">Hi, I'm <span class="hero-content-name">EimizuDev</span></strong>
+            <br>
+            <strong style="font-size: 30px">Graphics · Game Development · Embedded Curiosity</strong>
+          </h1>
+          <p>Turning curiosity into prototypes. Currently working on a voxel game engine.</p>
+          <button type="button" name="button">See Projects</button>
+          <button type="button" name="button">See Contacts</button>
+        </div>
+        <div class="hero-visual" style="position: relative;">
+          <img src="https://raw.githubusercontent.com/EimizuDev/afr-voxel-engine/refs/heads/main/docs/gifs/voxels.gif" id="hero-image">
+          <span aria-hidden="true"></span>
+        </div>
       </section>
     </main>
     <footer>© 2026 EimizuDev All rights reserved.</footer>

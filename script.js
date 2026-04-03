@@ -1,7 +1,7 @@
-const hero = document.getElementById('hero');
-const aboutMe = document.getElementById('about-me');
-const projects = document.getElementById('projects');
-const contacts = document.getElementById('contacts');
+const hero = document.getElementById('hero-nav');
+const aboutMe = document.getElementById('about-me-nav');
+const projects = document.getElementById('projects-nav');
+const contacts = document.getElementById('contacts-nav');
 const hoverSlider = document.getElementById('hover-slider');
 
 function GetNavElement(index) {
@@ -35,4 +35,4 @@ function TransformHoverSlider(index) {
   hoverSlider.style.transform = "translateX(" + widthSum + "px)";
 }
 
-TransformHoverSlider(0)
+TransformHoverSlider(0);
