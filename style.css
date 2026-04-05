@@ -21,7 +21,7 @@
 }
 
 body {
-  background-color: var(--bg);
+  background: linear-gradient(270deg, var(--bg) 50%, #1c2c2c);
 }
 
 nav {
@@ -81,8 +81,21 @@ nav ul li a {
 
 #hero-image {
   width: 400px;
+  border-radius: 19px;
+  mask-image: linear-gradient(135deg, white 70%, transparent);
+}
+
+.hero-visual-frame {
   border-radius: 30px;
-  mask-image: linear-gradient(135deg, white 80%, transparent);
+  padding: 4px;
+  background: linear-gradient(315deg, transparent 10%, var(--accentN));
+}
+
+.hero-visual-inside-frame {
+  background: var(--bg);
+  padding: 10px;
+  border-radius: 28px;
+  display: flex;
 }
 
 .hero-content-name {
@@ -92,9 +105,14 @@ nav ul li a {
   display: inline-block;
 }
 
+.hero-content p {
+  margin-top: 10px;
+}
+
 .hero-content button {
   cursor: pointer;
   padding: 10px 5px;
+  margin-top: 30px;
   background-color: var(--accentE);
   border: 0;
   border-radius: 10px;
