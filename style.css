@@ -15,7 +15,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: var(--text);
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   scroll-behavior: smooth;
 }
@@ -39,10 +39,16 @@ nav ul {
   gap: 5px;
   border-radius: 50px;
   font-size: 18px;
+  border: 1px solid #2c616d;
+  white-space: nowrap;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Noto Sans JP", sans-serif;
+}
+
+strong, span {
+  font-weight: 600;
 }
 
 footer {
@@ -66,9 +72,48 @@ nav ul li a {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: var(--hSurface);
+  background-color: #398293;
   border-radius: 50px;
   transition: all ease-in-out .15s;
+  box-shadow: 0px 0px 15px 2px #2b626e;
+}
+
+.nav-hamburger {
+  display: none;
+  right: 0;
+  border: 0;
+  padding: 10px;
+  border-radius: 50%;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background-color: var(--surface);
+  border: 1px solid #2c616d;
+}
+
+.nav-hamburger span {
+  height: 3px;
+  border-radius: 5px;
+  width: 30px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .nav-hamburger {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  #hover-slider {
+    display: none;
+  }
+
+  nav {
+    right: 0;
+  }
 }
 
 /* HERO Section */
@@ -109,16 +154,24 @@ nav ul li a {
   margin-top: 10px;
 }
 
-.hero-content button {
-  cursor: pointer;
-  padding: 10px 5px;
-  margin-top: 30px;
-  background-color: var(--accentE);
-  border: 0;
-  border-radius: 10px;
-  transition: all ease-in-out .2s;
+.hero-buttons {
+  display: flex;
+  gap: 20px;
 }
 
-.hero-content button:hover {
+main button {
+  cursor: pointer;
+  padding: 9px 27px;
+  background-color: #224d57;
+  color: #b8f5ff;
+  font-size: 17px;
+  border: 1px solid #2c616d;
+  box-shadow: 0px 0px 15px -4px #2b626e;
+  border-radius: 10px;
+  transition: all ease-in-out .2s;
+  margin-top: 30px;
+}
+
+main button:hover {
   background-color: var(--accentN);
 }

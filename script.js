@@ -29,7 +29,7 @@ function TransformHoverSlider(index) {
   for (let i = 0; i < index; i++) {
     const width = GetNavElement(i).getBoundingClientRect().width;
 
-    widthSum += width + 5;
+    widthSum += width + 5.3;
   }
 
   hoverSlider.style.transform = "translateX(" + widthSum + "px)";
