@@ -80,22 +80,22 @@ nav ul li a {
 
 .nav-hamburger {
   display: none;
-  right: 0;
-  border: 0;
-  padding: 10px;
-  border-radius: 50%;
   flex-direction: column;
-  gap: 5px;
+  gap: 7px;
   cursor: pointer;
-  background-color: var(--surface);
+  padding: 12px;
+  background-color: #224d57;
   border: 1px solid #2c616d;
+  box-shadow: 0px 0px 15px -4px #2b626e;
+  border-radius: 20px;
+  margin: 30px 30px 0 0;
 }
 
 .nav-hamburger span {
   height: 3px;
   border-radius: 5px;
-  width: 30px;
-  background-color: white;
+  width: 25px;
+  background-color: #b8f5ff;
 }
 
 @media (max-width: 768px) {
@@ -113,6 +113,9 @@ nav ul li a {
 
   nav {
     right: 0;
+    left: unset;
+    transform: unset;
+    top: unset;
   }
 }
 
