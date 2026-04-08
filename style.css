@@ -68,7 +68,6 @@ nav ul li a {
 }
 
 #hover-slider {
-  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
@@ -135,12 +134,14 @@ nav ul li a {
   }
 
   #hover-slider {
-    display: none;
+    border-radius: 25px;
+    height: unset;
+    opacity: 0;
   }
 
-  /* #hover-slider.active {
-    display: flex;
-  } */
+  #hover-slider.active {
+    opacity: 1;
+  }
 
   nav {
     right: 0;

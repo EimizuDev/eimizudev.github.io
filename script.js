@@ -3,6 +3,7 @@ const aboutMe = document.getElementById('about-me-nav');
 const projects = document.getElementById('projects-nav');
 const contacts = document.getElementById('contacts-nav');
 const hoverSlider = document.getElementById('hover-slider');
+const navUl = document.querySelector("nav ul");
 
 function GetNavElement(index) {
   if (index === 0) {
@@ -22,22 +23,30 @@ function GetNavElement(index) {
 }
 
 function TransformHoverSlider(index) {
-  const indexBounds = GetNavElement(index).getBoundingClientRect();
-  hoverSlider.style.width = indexBounds.width + 'px';
+  if (window.innerWidth <= 768) {
+    const navButtonBounds = hero.getBoundingClientRect();
 
-  let widthSum = 0;
-  for (let i = 0; i < index; i++) {
-    const width = GetNavElement(i).getBoundingClientRect().width;
+    hoverSlider.style.height = navButtonBounds.height + "px";
+    hoverSlider.style.width = navUl.getBoundingClientRect().width + "px";
 
-    widthSum += width + 5.3;
+    hoverSlider.style.transform = "translateY(" + (index * (navButtonBounds.height + 5) + 1) + "px)";
+  } else {
+    hoverSlider.style.width = GetNavElement(index).getBoundingClientRect().width + "px";
+    hoverSlider.style.height = "100%";
+
+    let widthSum = 0;
+    for (let i = 0; i < index; i++) {
+      const width = GetNavElement(i).getBoundingClientRect().width;
+
+      widthSum += width + 5.3;
+    }
+
+    hoverSlider.style.transform = "translateX(" + widthSum + "px)";
   }
-
-  hoverSlider.style.transform = "translateX(" + widthSum + "px)";
 }
 
 TransformHoverSlider(0);
 
-const navUl = document.querySelector("nav ul");
 const navHam = document.querySelector(".nav-hamburger");
 
 function ToggleHam() {
