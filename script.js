@@ -36,3 +36,12 @@ function TransformHoverSlider(index) {
 }
 
 TransformHoverSlider(0);
+
+const navUl = document.querySelector("nav ul");
+const navHam = document.querySelector(".nav-hamburger");
+
+function ToggleHam() {
+  navUl.classList.toggle("active");
+  hoverSlider.classList.toggle("active");
+  navHam.classList.toggle("active");
+}
