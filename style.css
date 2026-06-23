@@ -271,7 +271,7 @@ main button:hover {
 #about-me {
   display: flex;
   flex-direction: column;
-  padding: 50px 250px 200px;
+  padding: 50px 400px 200px;
   justify-content: space-evenly;
   align-items: center;
   gap: 10px;
@@ -295,7 +295,6 @@ main button:hover {
 }
 
 .about-me-card-1 {
-  border-radius: 20px;
   padding: 20px;
   background-color: var(--surface);
   border-radius: 20px;
@@ -309,8 +308,8 @@ main button:hover {
 }
 
 .about-me-card-2 {
-  width: 375px;
-  height: 275px;
+  width: 50%;
+  height: 200px;
   border-radius: 20px;
   padding: 20px;
   background-color: var(--surface);
