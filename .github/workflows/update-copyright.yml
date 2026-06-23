@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  test:
+  update-year:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
