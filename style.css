@@ -68,6 +68,24 @@ footer {
   padding: 10px 0;
 }
 
+.button {
+  cursor: pointer;
+  padding: 9px 27px;
+  background-color: #224d57;
+  color: #b8f5ff;
+  font-size: 17px;
+  border: 1px solid #2c616d;
+  box-shadow: 0px 0px 15px -4px #2b626e;
+  border-radius: 10px;
+  transition: all ease-in-out .2s;
+  margin-top: 30px;
+}
+
+.button:hover {
+  background-color: var(--accentN);
+}
+
+/* Navigation bar */
 nav ul li {
   z-index: 1000;
 }
@@ -210,23 +228,6 @@ nav ul li a {
   gap: 20px;
 }
 
-main button {
-  cursor: pointer;
-  padding: 9px 27px;
-  background-color: #224d57;
-  color: #b8f5ff;
-  font-size: 17px;
-  border: 1px solid #2c616d;
-  box-shadow: 0px 0px 15px -4px #2b626e;
-  border-radius: 10px;
-  transition: all ease-in-out .2s;
-  margin-top: 30px;
-}
-
-main button:hover {
-  background-color: var(--accentN);
-}
-
 .hero-content-1 {
   font-size: 50px;
 }
@@ -285,7 +286,7 @@ main button:hover {
 #about-me {
   display: flex;
   flex-direction: column;
-  padding: 50px 22vw 200px;
+  padding: 60px 22vw;
   justify-content: space-evenly;
   align-items: center;
   gap: 10px;
@@ -341,4 +342,75 @@ main button:hover {
   #about-me {
     padding: 50px 10vw 200px;
   }
+}
+
+/* Projects */
+#projects {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 22vw 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-sub-section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.projects-grid-1 {
+
+}
+
+.project-sub-section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.projects-grid-2 {
+  display: flex;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card img {
+  width: 25px;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.status {
+  display: flex;
+  border-radius: 50px;
+
+}
+
+.status p {
+  
+}
+
+.content {
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  justify-content: flex-end
+}
+
+.diagonals {
+  border-bottom: 100px solid red;
+  border-left: 75px solid rgba(0, 0, 0, 0);
+  height: 0;
+  width: 30%;
 }
