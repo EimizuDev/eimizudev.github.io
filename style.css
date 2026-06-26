@@ -379,9 +379,17 @@ nav ul li a {
 .project-card {
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
+  padding: 10px 15px;
+  background-color: var(--surface);
+  transition: 0.3s all ease-in-out;
 }
 
-.project-card img {
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.redirect-icon {
   width: 25px;
 }
 
@@ -394,23 +402,25 @@ nav ul li a {
 .status {
   display: flex;
   border-radius: 50px;
-
+  align-items: center;
 }
 
 .status p {
-  
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: black;
+  white-space: nowrap;
 }
 
-.content {
-  width: 100%;
-  background-color: grey;
-  display: flex;
-  justify-content: flex-end
+.status-1 {
+  clip-path: polygon(0 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+  padding-right: 22px;
+  padding-left: 14px;
 }
 
-.diagonals {
-  border-bottom: 100px solid red;
-  border-left: 75px solid rgba(0, 0, 0, 0);
-  height: 0;
-  width: 30%;
+.status-2 {
+  clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%);
+  margin-left: -12px;
+  padding-left: 22px;
+  padding-right: 14px;
 }
