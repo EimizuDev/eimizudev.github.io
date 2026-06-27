@@ -537,6 +537,17 @@ nav ul li a {
   gap: 10px;
 }
 
+#contacts li a {
+  width: inherit;
+  height: inherit;
+}
+
+#contacts li {
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
 /* Footer */
 footer {
   text-align: center;
