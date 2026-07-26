@@ -1,8 +1,9 @@
-const hero = document.getElementById('hero-nav');
-const aboutMe = document.getElementById('about-me-nav');
-const projects = document.getElementById('projects-nav');
-const contacts = document.getElementById('contacts-nav');
-const hoverSlider = document.getElementById('hover-slider');
+const hero = document.getElementById("hero-nav");
+const aboutMe = document.getElementById("about-me-nav");
+const projects = document.getElementById("projects-nav");
+const contacts = document.getElementById("contacts-nav");
+const bilingualDropdown = document.getElementById("bilingual-dropdown")
+const hoverSlider = document.getElementById("hover-slider");
 const navUl = document.querySelector("nav ul");
 
 function GetNavElement(index) {
@@ -17,6 +18,9 @@ function GetNavElement(index) {
   }
   else if (index === 3) {
     return contacts;
+  }
+  else if (index === 4) {
+    return bilingualDropdown;
   }
 
   return;
